@@ -1,0 +1,79 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;&family=Nanum+Myeongjo&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap'); */
+
+@font-face {
+    font-family: 'GothicA1-Thin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+:root {
+    --text-color: #f0f4f5;
+    --background-color: #ffeeff;
+    --accent-color: #f44336;
+    /* --hover-color: #f7bacf; */
+    --header-color:#c48b9f;
+}
+  
+
+body{
+    margin:0;
+    font-family: 'GothicA1-Thin', sans-serif;
+    background : var(--background-color);
+}
+
+header {
+    background : var(--header-color);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header ul {
+    display:flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.name ul {
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0;
+}
+
+li {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.career ul {
+    text-align: center;
+    display:inline;
+}
+.portfolio ul {
+    text-align: center;
+    display:inline;
+}
+.contact ul {
+    text-align: center;
+    display:inline;
+}
+
+footer {
+    text-align: center;
+}
