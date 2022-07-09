@@ -3,14 +3,14 @@
 @font-face {
     font-family: 'GothicA1-Thin';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Thin.woff2') format('woff2');
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
 }
 
 :root {
     --text-color: #f0f4f5;
     --background-color: #ffeeff;
-    --accent-color: #f44336;
+    --accent-color: #ba000d;
     /* --hover-color: #f7bacf; */
     --header-color:#c48b9f;
 }
@@ -76,4 +76,60 @@ li {
 
 footer {
     text-align: center;
+}
+.toggleBtn {
+    color:var(--accent-color);
+    position:absolute;
+    right:25px;
+    display:none;
+}
+
+@media screen and (max-width:768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 5px 10px 5px;
+    }
+    .menu {
+        flex-direction: column;
+        text-align: center;
+        width:100%;
+        display:none;
+    }
+    .menu li {
+        padding: 5px 10px;
+    }
+    .menu li:hover {
+        background:pink;
+        border-radius: 4px;
+    }
+    .career ul {
+        text-align: start;
+        display:inline;
+    }
+    .career ul li {
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .portfolio ul {
+        text-align: start;
+        /* display:inline; */
+    }
+    .portfolio ul li {
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .contact ul {
+        text-align: start;
+        display:inline;
+    }
+    .contact ul li {
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .toggleBtn {
+        display:block;
+    }
+    .menu.active {
+        display:flex;
+    }
 }
